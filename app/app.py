@@ -13,7 +13,7 @@ def process_order():
     logging.info(f"Processing order: {data}")
     
     return jsonify({
-        "status": "processed"
+        "status": "processed",
         "order_id": order_id
     }), 200
 if __name__ == "__main__":
