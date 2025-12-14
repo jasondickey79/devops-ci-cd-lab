@@ -1,13 +1,7 @@
 pipeline {
     agent any
-    
+
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/jasondickey79/devops-ci-cd-lab.git'
-            }
-        }
-        
         stage('Install Dependencies') {
             steps {
                 sh 'pip install pytest flask'
