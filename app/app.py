@@ -3,7 +3,7 @@ import uuid
 import logging
 
 app = Flask(__name__)
-logging.bsicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.INFO)
 
 @app.route("/process-order", methods=["POST"])
 def process_order():
